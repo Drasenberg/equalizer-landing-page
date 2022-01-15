@@ -1,0 +1,56 @@
+@use './variables' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-size: $fs;
+  font-family: $ff;
+  * {
+    margin: 0;
+  }
+  .background {
+    width: 281px;
+    height: 480px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/bg-main-mobile.png');
+    position: absolute;
+    right: -50px;
+    top: -150px;
+  }
+  header {
+    .logo {
+      background-image: url('../assets/logo.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 147px;
+      height: 32px;
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-bottom: 2em;
+    }
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+      font-size: 2.5em;
+      font-weight: $fw-bold;
+      width: 327px;
+      color: $clr-black;
+      letter-spacing: -0.45px;
+      line-height: 48px;
+    }
+    p {
+      width: 327px;
+      line-height: 26px;
+      color: $clr-black;
+      font-weight: $fw-regular;
+    }
+  }
+}
