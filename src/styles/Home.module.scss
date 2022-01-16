@@ -1,9 +1,9 @@
-@use './variables' as *;
+@use "./variables" as *;
 
 .container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
   font-size: $fs;
@@ -16,14 +16,14 @@
     height: 480px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../assets/bg-main-mobile.png');
+    background-image: url("../assets/bg-main-mobile.png");
     position: absolute;
     right: -50px;
     top: -150px;
   }
   header {
     .logo {
-      background-image: url('../assets/logo.svg');
+      background-image: url("../assets/logo.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -38,7 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    h1{
+    h1 {
       font-size: 2.5em;
       font-weight: $fw-bold;
       width: 327px;
@@ -51,6 +51,73 @@
       line-height: 26px;
       color: $clr-black;
       font-weight: $fw-regular;
+    }
+    .appDesc {
+      margin-top: 120px;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .bgContainer {
+        background-color: $clr-darkBlue;
+        position: relative;
+        z-index: -2;
+        width: 100%;
+        height: 600px;
+        border-radius: 10px;
+        .bgImage {
+          background-image: url("../assets/bg-pattern-2.svg");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 280px;
+          height: 420px;
+          position: absolute;
+          z-index: -1;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .appImage {
+          background-image: url("../assets/illustration-app.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 208px;
+          height: 430px;
+          position: absolute;
+          top: -80px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .contentDesc {
+        background-color: $clr-orange;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        position: absolute;
+        bottom: -50px;
+        border-radius: 10px;
+        h2 {
+          align-self: flex-start;
+          margin-left: 22px;
+          font-size: 2em;
+          color: $clr-white;
+          font-weight: $fw-bold;
+          line-height: 40px;
+          word-spacing: 1px;
+        }
+        p {
+          font-size: 18px;
+          font-weight: $fw-regular;
+          color: $clr-white;
+          line-height: 28px;
+        }
+      }
     }
   }
 }
