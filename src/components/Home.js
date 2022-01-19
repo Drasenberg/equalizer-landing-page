@@ -1,5 +1,10 @@
 import React from "react";
 import classes from "../styles/Home.module.scss";
+import iconApple from "../assets/icon-apple.svg";
+import iconAndroid from "../assets/icon-android.svg";
+import iconFacebook from "../assets/icon-facebook.svg";
+import iconInstagram from "../assets/icon-instagram.svg";
+import iconTwitter from "../assets/icon-twitter.svg";
 
 function Home() {
   return (
@@ -28,18 +33,39 @@ function Home() {
               and spatial audio. Take your listening experience to a whole new
               level and access all our incredible features!
             </p>
-            <p>
-              <span>$4</span> / month{" "}
+            <p className={classes.price}>
+              <span>$4</span> / month
             </p>
-            <button>iOS Download</button>
-            <button>Android Download</button>
+            <div className={classes.controls}>
+              <button className={classes.ios}>
+                <img src={iconApple} />
+                iOS Download
+              </button>
+              <button className={classes.android}>
+                <img src={iconAndroid} /> Android Download
+              </button>
+            </div>
           </div>
         </div>
       </main>
 
       <footer>
-        All rights reserved © Equalizer 2021 Have any problems? Contact us via
-        social media or email us at equalizer@example.com
+        <div className={classes.logo}></div>
+        <div className={classes.footerContent}>
+          All rights reserved © Equalizer 2021 Have any problems? Contact us via
+          social media or email us at <br /> <span>equalizer@example.com</span>
+        </div>
+        <div className={classes.social}>
+          <button>
+            <img src={iconFacebook} alt="facebook" />
+          </button>
+          <button>
+            <img src={iconInstagram} alt="instagram" />
+          </button>
+          <button>
+            <img src={iconTwitter} alt="twitter" />
+          </button>
+        </div>
       </footer>
     </div>
   );
