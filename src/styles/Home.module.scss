@@ -149,12 +149,11 @@
             letter-spacing: -0.18px;
           }
           .ios {
-            background-color: $clr-black;
+            background-color: $clr-darkBlue;
             color: $clr-white;
             display: flex;
             align-items: center;
             justify-content: center;
-          
           }
           .android {
             display: flex;
@@ -173,28 +172,260 @@
     margin-top: 2em;
     gap: 2em;
     padding-bottom: 3em;
-    .logo {
-      width: 146px;
-      height: 32px;
-      background-image: url('../assets/logo.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-    }
-    .footerContent{
+    .footerContent {
       width: 90%;
       font-size: 16px;
       line-height: 26px;
       font-weight: 400;
       color: $clr-black;
-      span{
+      span {
         font-weight: 700;
+      }
+      .logo {
+        width: 146px;
+        height: 32px;
+        background-image: url("../assets/logo.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
       }
     }
     .social {
       width: 100px;
+      display: flex;
+      gap: 20px;
       button {
-        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border: none;        
+      }
+      .facebook {
+      background-image: url('../assets/icon-facebook.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-blend-mode: overlay;
+      }
+      .instagram {
+        background-image: url('../assets/icon-instagram.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-blend-mode: overlay;
+      }
+      .twitter {
+        background-image: url('../assets/icon-twitter.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-blend-mode: overlay;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    .background {
+      width: 983px;
+      height: 808px;
+      background-image: url("../assets/bg-main-tablet.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      right: -150px;
+      top: -250px;
+      .innerBg {
+        width: 266px;
+        height: 400px;
+        background-image: url("../assets/bg-pattern-1.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        right: 110px;
+        top: 200px;
+      }
+    }
+    header {
+      .logo {
+        margin-left: 2em;
+      }
+    }
+    main {
+      .intro {
+        width: 520px;
+        margin-top: 2em;
+        align-self: flex-start;
+        margin-left: 2em;
+        h1 {
+          font-size: 64px;
+          line-height: 64px;
+        }
+        p {
+          margin-top: 2em;
+          width: 514px;
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+      .appDesc {
+        .bgContainer {
+          .appImage {
+            width: 270px;
+            height: 556px;
+            left: 220px;
+          }
+        }
+        .contentDesc {
+          justify-content: center;
+          align-items: center;
+          width: 400px;
+          height: 546px;
+          border-radius: 20px;
+          right: 100px;
+          bottom: 0;
+          h2 {
+            margin-left: 1.12em;
+            font-size: 32px;
+            line-height: 40px;
+          }
+          p {
+            font-size: 18px;
+            line-height: 28px;
+          }
+          .price {
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: -0.2px;
+            span {
+              font-size: 65px;
+              line-height: 52px;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      .footerContent {
+        width: 366px;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    .background {
+      width: 100vw;
+      height: 100vh;
+      background-image: url("../assets/bg-main-desktop.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      right: 0;
+      top: 0;
+      z-index: -1000;
+      .innerBg {
+        width: 312px;
+        height: 468px;
+        top: -50px;
+        right: 0;
+      }
+    }
+    header {
+      .logo {
+        margin-left: 2em;
+      }
+    }
+    main {
+      .intro {
+        width: 1015px;
+        margin-top: 2em;
+        align-self: flex-start;
+        margin-left: 2em;
+        h1 {
+          width: 1015px;
+          font-size: 88px;
+          line-height: 88px;
+          letter-spacing: -1px;
+        }
+        p {
+          margin-top: 2em;
+          width: 825px;
+          font-size: 20px;
+          line-height: 34px;
+        }
+      }
+      .appDesc {
+        .bgContainer {
+          .appImage {
+            width: 312px;
+            height: 642px;
+            left: 495px;
+          }
+        }
+        .contentDesc {
+          justify-content: center;
+          align-items: center;
+          width: 446px;
+          height: 625px;
+          border-radius: 20px;
+          right: 230px;
+          bottom: 0;
+          h2 {
+            margin-left: 1.12em;
+            font-size: 40px;
+            line-height: 52px;
+          }
+          p {
+            font-size: 20px;
+            line-height: 34px;
+          }
+          .price {
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: -0.2px;
+            span {
+              font-size: 65px;
+              line-height: 52px;
+            }
+          }
+          .controls {
+            .ios:hover {
+              background-color: $clr-blue;
+            }
+            .android:hover {
+              background-color: $clr-yellow;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      width: 1100px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .footerContent {
+        width: 700px;
+        gap: 3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .social {
+        button:hover {
+          background-color: $clr-orange;
+          opacity: 0.8;
+        }
       }
     }
   }
