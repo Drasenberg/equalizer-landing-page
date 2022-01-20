@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/equalizer-landing-page/static/css/main.e6c13ad2.css",
-    "main.js": "/equalizer-landing-page/static/js/main.b442640f.js",
+    "main.css": "/equalizer-landing-page/static/css/main.efa376a1.css",
+    "main.js": "/equalizer-landing-page/static/js/main.03dc6c9b.js",
+    "static/media/bg-main-desktop.png": "/equalizer-landing-page/static/media/bg-main-desktop.8085941e729a2e4c8077.png",
+    "static/media/bg-main-tablet.png": "/equalizer-landing-page/static/media/bg-main-tablet.25e488fd235ddef4319d.png",
+    "static/media/bg-main-mobile.png": "/equalizer-landing-page/static/media/bg-main-mobile.5c908035d1b50f7aac83.png",
+    "static/media/illustration-app.png": "/equalizer-landing-page/static/media/illustration-app.ba314fadcdc0e3315830.png",
+    "static/media/logo.svg": "/equalizer-landing-page/static/media/logo.dee4653fc1e24c577e46.svg",
+    "static/media/icon-android.svg": "/equalizer-landing-page/static/media/icon-android.4cafae52379b120e0b591571c6b45b9f.svg",
+    "static/media/icon-instagram.svg": "/equalizer-landing-page/static/media/icon-instagram.29936deb340d5f724e67.svg",
+    "static/media/bg-pattern-1.svg": "/equalizer-landing-page/static/media/bg-pattern-1.7288106dc08a3c8498e0.svg",
     "index.html": "/equalizer-landing-page/index.html",
-    "main.e6c13ad2.css.map": "/equalizer-landing-page/static/css/main.e6c13ad2.css.map",
-    "main.b442640f.js.map": "/equalizer-landing-page/static/js/main.b442640f.js.map"
+    "static/media/icon-apple.svg": "/equalizer-landing-page/static/media/icon-apple.512441f110679f33cd8eb1e9e9141f2e.svg",
+    "static/media/bg-pattern-2.svg": "/equalizer-landing-page/static/media/bg-pattern-2.da4438d95f7dcf5bc9f0.svg",
+    "static/media/icon-twitter.svg": "/equalizer-landing-page/static/media/icon-twitter.ef2d5a78d105d4f7ab49.svg",
+    "static/media/icon-facebook.svg": "/equalizer-landing-page/static/media/icon-facebook.8c900fe0021e1d5d969f.svg",
+    "main.efa376a1.css.map": "/equalizer-landing-page/static/css/main.efa376a1.css.map",
+    "main.03dc6c9b.js.map": "/equalizer-landing-page/static/js/main.03dc6c9b.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.b442640f.js"
+    "static/css/main.efa376a1.css",
+    "static/js/main.03dc6c9b.js"
   ]
 }
